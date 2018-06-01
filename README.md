@@ -1,4 +1,7 @@
 # freifunk-IoT Konzept
+
+Aktueller Stand: https://github.com/FFS-IoT/freifunk-iot-concept/blob/master/Treffen-2018-06-01.md
+
 Hier ist das Konzept für ein IoT-Projekt als interner Service im Freifunknetz zu finden.
 
 Entstanden sind die Ideen von margau bei Freifunk Stuttgart, aber auch über andere Ausrichtungen/Aspekte kann man reden ;)
