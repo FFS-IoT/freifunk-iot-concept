@@ -16,7 +16,14 @@ Sensor:
                    "channel1": "int",
                    "channel2": "float",
                    "channel3": "string"
-                 }
+                 },
+    "errorcodes": {
+                   "1":         "Internal sensor error"
+    },
+    "events": {
+                    "onDataIn":     ["hook.DataIn"],
+                    "minutes(5)":   ["utils.checkInterval"]
+    }
 }
 ```
 
@@ -27,5 +34,14 @@ User:
     "pwhash": "123abc",
     "email": "test@test.test",
     "2fa": "123abc",
+    "notification_hooks": [{"module":"hook",
+                            "options": {"url":"example.com/hook",
+                                        "method":"POST"}
+                            },
+                            {
+                            "module":"im",
+                            "options": {"messenger":"Signal",
+                                        "phone":"000000000"};
+                            }]
 }
 ```
