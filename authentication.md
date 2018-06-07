@@ -5,9 +5,12 @@ Sensor:
 {
     "sensorid": "sensor123",
     "description": "Longer description for this sensor",
-    "lat": "50N",
-    "long": "9E",
-    "height":"100m",
+    "location": {
+                "type": "<static|dynamic>", //if type is dynamic, location can change and is saved in influx (e.g. mobile sensor)
+                "lat": "50N",
+                "long": "9E",
+                "height":"100m"
+     },
     "token": "123abc",
     "pubkey": "123abc",
     "auth_level": "<none|token|signature>",
