@@ -17,9 +17,6 @@ Sensor:
                    "channel2": "float",
                    "channel3": "string"
                  },
-    "errorcodes": {
-                   "1":         "Internal sensor error"
-    },
     "events": {
                     "onDataIn":     ["hook.DataIn"],
                     "minutes(5)":   ["utils.checkInterval"]
