@@ -11,7 +11,7 @@ Per MQTT werden JSON-Formatierte Objekte an den Channel "iot_input" gesendet.
 **Optional**
 
 - Channel: Ein oder mehrere Datenchannels, in die Daten geschrieben werden. Wird übermittelt im Format "{sensor-id}.{channel}"
-- Error: Wenn ein Fehler aufgetreten ist, Fehlercode > 0 *noch nicht implementiert*
+- Error: Wenn ein Fehler aufgetreten ist, Fehlercode > 0. Wird im Channel *_error* übertragen. Empfehlung: *_error*=0 wenn alles okay ist *noch nicht implementiert*
 - timestamp: Unix-Zeitstempel des Messwertes
 - timestamp_ms: Unix-Zeitstempel in ms *noch nicht implementiert*
 - signature: Kryptografische Signatur der Daten, zur Definition siehe die Auth-Details *noch nicht implementiert*
